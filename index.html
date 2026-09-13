@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional cybersecurity solutions to protect your business from threats">
+    <title>Cybersecurity Solutions - Comprehensive Security Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">Cybersecurity Solutions</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#getting-started" class="nav-link">Get Started</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Advanced Cybersecurity</span>
+                    <br>Solutions Toolkit
+                </h1>
+                <p class="hero-description">
+                    A comprehensive cybersecurity toolkit with 21+ advanced security tools. 
+                    Protect your digital assets with password security, encryption, network scanning, 
+                    malware detection, and much more. All tools are open-source and ready to use.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="21">0</div>
+                        <div class="stat-label">Security Tools</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Open Source</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Security Solutions</h2>
+                <p class="section-subtitle">Comprehensive cybersecurity toolkit with 21+ advanced security features</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" onclick="openFeatureModal('password')">
+                    <div class="service-icon">🔑</div>
+                    <h3 class="service-title">Password Security</h3>
+                    <p class="service-description">
+                        Advanced password strength checking, secure password generation, and validation tools.
+                    </p>
+                    <ul class="service-features">
+                        <li>Password Strength Analysis</li>
+                        <li>Secure Password Generator</li>
+                        <li>Password Validation</li>
+                        <li>Common Password Detection</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('encryption')">
+                    <div class="service-icon">🔐</div>
+                    <h3 class="service-title">File Encryption</h3>
+                    <p class="service-description">
+                        Industry-standard AES-256 encryption for files and strings with PBKDF2 key derivation.
+                    </p>
+                    <ul class="service-features">
+                        <li>AES-256 File Encryption</li>
+                        <li>String Encryption/Decryption</li>
+                        <li>PBKDF2 Key Derivation</li>
+                        <li>Secure File Storage</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('network')">
+                    <div class="service-icon">🌐</div>
+                    <h3 class="service-title">Network Security</h3>
+                    <p class="service-description">
+                        Comprehensive network scanning, SSL certificate checking, and DNS security analysis.
+                    </p>
+                    <ul class="service-features">
+                        <li>Port Scanning</li>
+                        <li>SSL Certificate Verification</li>
+                        <li>DNS Security Checks</li>
+                        <li>Network Connectivity Testing</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('utilities')">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Security Utilities</h3>
+                    <p class="service-description">
+                        Hash generation, API keys, secret tokens, Argon2 password hashing, and file integrity verification.
+                    </p>
+                    <ul class="service-features">
+                        <li>Multiple Hash Algorithms</li>
+                        <li>API Key Generation</li>
+                        <li>Argon2 Password Hashing</li>
+                        <li>File Integrity Verification</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('privacy')">
+                    <div class="service-icon">🔒</div>
+                    <h3 class="service-title">Data Privacy</h3>
+                    <p class="service-description">
+                        Sensitive data detection, masking, and anonymization tools for privacy compliance.
+                    </p>
+                    <ul class="service-features">
+                        <li>Sensitive Data Detection</li>
+                        <li>Email/Phone/SSN Masking</li>
+                        <li>Text Sanitization</li>
+                        <li>Pseudonym Generation</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('2fa')">
+                    <div class="service-icon">🔑</div>
+                    <h3 class="service-title">Two-Factor Auth (2FA)</h3>
+                    <p class="service-description">
+                        TOTP generation, secret key management, and QR code URL generation for authenticator apps.
+                    </p>
+                    <ul class="service-features">
+                        <li>TOTP Code Generation</li>
+                        <li>Secret Key Management</li>
+                        <li>Code Verification</li>
+                        <li>QR Code URL Generation</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('deletion')">
+                    <div class="service-icon">🗑️</div>
+                    <h3 class="service-title">Secure File Deletion</h3>
+                    <p class="service-description">
+                        Secure file shredding with multiple overwrite passes including Gutmann method (35 passes).
+                    </p>
+                    <ul class="service-features">
+                        <li>Multi-Pass File Shredding</li>
+                        <li>Gutmann Method (35 passes)</li>
+                        <li>Directory Deletion</li>
+                        <li>Data Recovery Prevention</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('url')">
+                    <div class="service-icon">🔗</div>
+                    <h3 class="service-title">URL Security</h3>
+                    <p class="service-description">
+                        Comprehensive URL analysis, phishing detection, and domain security checking.
+                    </p>
+                    <ul class="service-features">
+                        <li>URL Security Analysis</li>
+                        <li>Phishing Detection</li>
+                        <li>URL Shortener Expansion</li>
+                        <li>Domain Reputation Check</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('email')">
+                    <div class="service-icon">📧</div>
+                    <h3 class="service-title">Email Security</h3>
+                    <p class="service-description">
+                        Email header analysis, SPF/DKIM/DMARC checking, and phishing detection in email content.
+                    </p>
+                    <ul class="service-features">
+                        <li>Header Analysis</li>
+                        <li>SPF/DKIM/DMARC Verification</li>
+                        <li>Phishing Detection</li>
+                        <li>Spoofing Detection</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('headers')">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-title">Security Headers</h3>
+                    <p class="service-description">
+                        HTTP security headers checking, CSP analysis, HSTS verification, and security reports.
+                    </p>
+                    <ul class="service-features">
+                        <li>Security Headers Analysis</li>
+                        <li>CSP Validation</li>
+                        <li>HSTS Checking</li>
+                        <li>Security Recommendations</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('audit')">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">Security Audit</h3>
+                    <p class="service-description">
+                        Log file analysis, brute force detection, access log analysis, and comprehensive audit reports.
+                    </p>
+                    <ul class="service-features">
+                        <li>Log File Analysis</li>
+                        <li>Brute Force Detection</li>
+                        <li>Access Log Analysis</li>
+                        <li>Audit Report Generation</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('certificate')">
+                    <div class="service-icon">📜</div>
+                    <h3 class="service-title">Certificate Analyzer</h3>
+                    <p class="service-description">
+                        Detailed SSL/TLS certificate analysis, expiry checking, chain verification, and security scoring.
+                    </p>
+                    <ul class="service-features">
+                        <li>Certificate Analysis</li>
+                        <li>Expiry Date Checking</li>
+                        <li>Chain Verification</li>
+                        <li>Security Scoring</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('backup')">
+                    <div class="service-icon">💾</div>
+                    <h3 class="service-title">Backup Verification</h3>
+                    <p class="service-description">
+                        Backup integrity verification, manifest creation, backup comparison, and age checking.
+                    </p>
+                    <ul class="service-features">
+                        <li>Backup Integrity Check</li>
+                        <li>Manifest Creation</li>
+                        <li>Backup Comparison</li>
+                        <li>Backup Age Analysis</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('config')">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">Config Security</h3>
+                    <p class="service-description">
+                        Password policy checking, file permissions analysis, SSH config security, and environment variable checks.
+                    </p>
+                    <ul class="service-features">
+                        <li>Password Policy Check</li>
+                        <li>File Permissions Analysis</li>
+                        <li>SSH Config Security</li>
+                        <li>Environment Variable Audit</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('phishing')">
+                    <div class="service-icon">🎣</div>
+                    <h3 class="service-title">Phishing Detection</h3>
+                    <p class="service-description">
+                        Advanced phishing URL detection with multi-method analysis, domain similarity, and blacklist checking.
+                    </p>
+                    <ul class="service-features">
+                        <li>Multi-Method Phishing Detection</li>
+                        <li>URL Structure Analysis</li>
+                        <li>Domain Similarity Check</li>
+                        <li>Blacklist Verification</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('ids')">
+                    <div class="service-icon">🚨</div>
+                    <h3 class="service-title">Intrusion Detection (IDS)</h3>
+                    <p class="service-description">
+                        Real-time log analysis, port scan detection, brute force detection, and file change monitoring.
+                    </p>
+                    <ul class="service-features">
+                        <li>Log Entry Analysis</li>
+                        <li>Port Scan Detection</li>
+                        <li>Brute Force Detection</li>
+                        <li>File Change Monitoring</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('malware')">
+                    <div class="service-icon">🦠</div>
+                    <h3 class="service-title">Malware Detection (ML)</h3>
+                    <p class="service-description">
+                        Machine learning-based malware detection with feature extraction, entropy analysis, and hash matching.
+                    </p>
+                    <ul class="service-features">
+                        <li>ML-Based Classification</li>
+                        <li>Feature Extraction</li>
+                        <li>Entropy Analysis</li>
+                        <li>Hash Database Matching</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('email-spam')">
+                    <div class="service-icon">📨</div>
+                    <h3 class="service-title">Email Spam Detection</h3>
+                    <p class="service-description">
+                        Advanced email spam and phishing detection with content analysis and risk assessment.
+                    </p>
+                    <ul class="service-features">
+                        <li>Spam Detection</li>
+                        <li>Phishing Email Analysis</li>
+                        <li>Content Pattern Detection</li>
+                        <li>Risk Scoring</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('keylogger')">
+                    <div class="service-icon">⌨️</div>
+                    <h3 class="service-title">Keylogger Detection</h3>
+                    <p class="service-description">
+                        System-wide keylogger detection, process scanning, startup program analysis, and full system scans.
+                    </p>
+                    <ul class="service-features">
+                        <li>Process Scanning</li>
+                        <li>Startup Program Check</li>
+                        <li>Full System Scan</li>
+                        <li>Detection Reports</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('voting')">
+                    <div class="service-icon">⛓️</div>
+                    <h3 class="service-title">Blockchain Voting</h3>
+                    <p class="service-description">
+                        Secure blockchain-based voting system with voter registration, vote casting, and result verification.
+                    </p>
+                    <ul class="service-features">
+                        <li>Voter Registration</li>
+                        <li>Secure Vote Casting</li>
+                        <li>Blockchain Verification</li>
+                        <li>Result Transparency</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+                <div class="service-card" onclick="openFeatureModal('evil-twin')">
+                    <div class="service-icon">📡</div>
+                    <h3 class="service-title">Evil Twin Detection</h3>
+                    <p class="service-description">
+                        Wi-Fi network scanning and evil twin detection to identify fake or malicious wireless networks.
+                    </p>
+                    <ul class="service-features">
+                        <li>Wi-Fi Network Scanning</li>
+                        <li>Evil Twin Detection</li>
+                        <li>Network Legitimacy Check</li>
+                        <li>Security Reports</li>
+                    </ul>
+                    <button class="service-btn">Try Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">Comprehensive security toolkit with advanced capabilities</p>
+            </div>
+            <div class="features-content">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Comprehensive Security Suite</h3>
+                        <p class="feature-description">
+                            Access 21+ security tools covering password security, encryption, network scanning, 
+                            malware detection, phishing prevention, and more - all in one toolkit.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Machine Learning Detection</h3>
+                        <p class="feature-description">
+                            Advanced ML-based malware detection with feature extraction, entropy analysis, 
+                            and intelligent threat classification for accurate security assessments.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Industry-Standard Encryption</h3>
+                        <p class="feature-description">
+                            AES-256 file encryption with PBKDF2 key derivation, secure password hashing with Argon2, 
+                            and comprehensive data protection mechanisms.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Real-Time Threat Detection</h3>
+                        <p class="feature-description">
+                            Intrusion Detection System (IDS) with log analysis, port scan detection, 
+                            brute force identification, and file change monitoring capabilities.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Advanced Phishing Protection</h3>
+                        <p class="feature-description">
+                            Multi-method phishing detection for URLs and emails, domain similarity analysis, 
+                            blacklist checking, and comprehensive security scoring.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">06</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Open Source & Extensible</h3>
+                        <p class="feature-description">
+                            Fully open-source toolkit with modular architecture. Easy to integrate, 
+                            customize, and extend for your specific security needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="getting-started">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Getting Started</h2>
+                <p class="section-subtitle">Quick setup guide to start using the cybersecurity toolkit</p>
+            </div>
+            <div class="getting-started-content">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Install Dependencies</h3>
+                    <p class="step-description">
+                        Install required Python packages using pip:
+                    </p>
+                    <code class="code-block">pip install -r requirements.txt</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Run the Application</h3>
+                    <p class="step-description">
+                        Launch the interactive menu-driven interface:
+                    </p>
+                    <code class="code-block">python main.py</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Use Individual Modules</h3>
+                    <p class="step-description">
+                        Import and use specific modules in your Python scripts:
+                    </p>
+                    <code class="code-block">from password_security import PasswordSecurity<br>from file_encryption import FileEncryption</code>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3 class="tech-title">Technology Stack</h3>
+                <div class="tech-items">
+                    <span class="tech-item">Python 3.7+</span>
+                    <span class="tech-item">Cryptography</span>
+                    <span class="tech-item">Machine Learning</span>
+                    <span class="tech-item">AES-256</span>
+                    <span class="tech-item">Argon2</span>
+                    <span class="tech-item">TOTP</span>
+                    <span class="tech-item">Blockchain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Cybersecurity Solutions Toolkit</h2>
+                    <p class="about-description">
+                        The Cybersecurity Solutions Toolkit is a comprehensive open-source security suite 
+                        designed to enhance online security, protect against threats, and ensure privacy 
+                        and integrity of user data. With 21+ specialized security modules, it provides 
+                        everything you need for robust cybersecurity.
+                    </p>
+                    <p class="about-description">
+                        Built with Python and following industry best practices, this toolkit covers 
+                        password security, file encryption, network scanning, malware detection, phishing 
+                        prevention, intrusion detection, and many more security domains. All tools are 
+                        modular, well-documented, and ready for integration into your security workflows.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <strong>21+</strong>
+                            <span>Security Tools</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>100%</strong>
+                            <span>Open Source</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Python</strong>
+                            <span>Powered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="security-visualization">
+                            <div class="shield-animation">🛡️</div>
+                            <div class="security-layers">
+                                <div class="layer layer-1"></div>
+                                <div class="layer layer-2"></div>
+                                <div class="layer layer-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions or need support? Contact us today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">👨‍💻</div>
+                        <div class="info-content">
+                            <h4>Contact Developers</h4>
+                            <p><strong>Team:</strong> Technophile</p>
+                            <p><strong>Email:</strong> ank*****h@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>GitHub</h4>
+                            <p>github.com/cybersecurity-solutions</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📚</div>
+                        <div class="info-content">
+                            <h4>Documentation</h4>
+                            <p>See README.md and API_DOCUMENTATION.md</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">💬</div>
+                        <div class="info-content">
+                            <h4>Issues & Support</h4>
+                            <p>Open an issue on GitHub<br>for questions or contributions</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">Cybersecurity Solutions</span>
+                    </div>
+                    <p class="footer-description">
+                        Comprehensive open-source cybersecurity toolkit with 21+ security tools 
+                        for password security, encryption, network scanning, and threat detection.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Threat Detection</a></li>
+                        <li><a href="#services">Vulnerability Assessment</a></li>
+                        <li><a href="#services">Data Encryption</a></li>
+                        <li><a href="#services">Incident Response</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cybersecurity Solutions Toolkit.</p>
+                <p style="margin-top: 1rem; font-size: 1.5rem; color: whitesmoke;">Made with ❤️ by Team Technophile</p>
+                <p style="margin-top: 1rem; font-size: 1.3rem;">Member:- Ankit kumar    Prince raj    Manas raj    Saransh kumar    Ranjeet kumar    Vedvyas kumar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
