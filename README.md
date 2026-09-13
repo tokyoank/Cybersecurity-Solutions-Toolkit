@@ -4,11 +4,11 @@ A modern, responsive website for cybersecurity solutions built with HTML, CSS, a
 
 ## Features
 
-- 🎨 **Modern Design**: Clean, professional UI with gradient effects and smooth animations
-- 📱 **Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
-- ⚡ **Interactive Elements**: Smooth scrolling, animated counters, and hover effects
-- 🛡️ **Security Focused**: Professional presentation of cybersecurity services
-- 🎯 **SEO Friendly**: Semantic HTML structure and meta tags
+- **Modern Design**: Clean, professional UI with gradient effects and smooth animations
+- **Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
+- **Interactive Elements**: Smooth scrolling, animated counters, and hover effects
+- **Security Focused**: Professional presentation of cybersecurity services
+- **SEO Friendly**: Semantic HTML structure and meta tags
 
 ## Sections
 
@@ -108,12 +108,6 @@ Edit the CSS variables in `styles.css`:
 
 ## License
 
-This project is open source and available for personal and commercial use.
+This project is open source...
 
-## Contact
 
-For questions or support, please contact: contact@cybershield.com
-
----
-
-Built with ❤️ for cybersecurity professionals
